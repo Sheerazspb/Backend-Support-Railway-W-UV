@@ -59,7 +59,7 @@ while True:
 	os.system('cls' if os.name == 'nt' else 'clear')
 	animation = ["[■□□□□□□□□□] 10%","[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
 	for i in range(len(animation)):
-		time.sleep(0.2)
+		time.sleep(0.1)
 		sys.stdout.write("\r[∆] Progress: " + animation[i % len(animation)])
 		sys.stdout.flush()
 	result = run()
@@ -68,14 +68,14 @@ while True:
 		print(f"\n[•] WARP+ ID: {referrer}")
 		print(f"[✓] Added: {g} GB")
 		print(f"[#] Total: {g} Good {b} Bad")
-		for i in range(22,-1,-1):
+		for i in range(27,-1,-1):
 			sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
 			sys.stdout.flush()
 			time.sleep(1)
 	else:
 		b += 1
 		print(f"[#] Total: {g} Good {b} Bad")
-		for i in range(22,-1,-1):
+		for i in range(27,-1,-1):
 			sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
 			sys.stdout.flush()
 			time.sleep(1)
